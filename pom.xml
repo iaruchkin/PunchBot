@@ -27,12 +27,12 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <outputDirectory>${basedir}</outputDirectory>
-                    <finalName>PunchBot</finalName>
+                    <finalName>org.telegram.PunchBot</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>Main</mainClass>
+                            <mainClass>org.telegram.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
