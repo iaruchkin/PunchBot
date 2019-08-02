@@ -4,11 +4,9 @@ package org.telegram.functions;
  * Created by igor on 27.09.17.
  */
         import org.telegram.PunchBot;
-        import org.telegram.telegrambots.api.methods.send.SendMessage;
-        import org.telegram.telegrambots.api.objects.replykeyboard.ReplyKeyboardMarkup;
-        import org.telegram.telegrambots.api.objects.replykeyboard.buttons.KeyboardRow;
-        import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-        import org.telegram.telegrambots.exceptions.TelegramApiException;
+        import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+        import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+
 
         import java.util.ArrayList;
         import java.util.List;
@@ -26,7 +24,7 @@ public class Punch extends PunchBot {
 
         try {
             // Send the message
-            sendMessage(message);
+            execute(message);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

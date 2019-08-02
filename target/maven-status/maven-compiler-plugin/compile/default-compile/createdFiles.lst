@@ -1,0 +1,11 @@
+org/telegram/functions/Punch.class
+PageAsker.class
+org/telegram/functions/Generator.class
+org/telegram/PunchBot.class
+org/telegram/functions/Lyrics.class
+org/telegram/BuildVars.class
+org/telegram/BotConfig.class
+org/telegram/functions/Help.class
+org/telegram/Main.class
+org/telegram/Commands.class
+org/telegram/functions/Keyboard.class

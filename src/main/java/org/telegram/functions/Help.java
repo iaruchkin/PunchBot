@@ -1,8 +1,8 @@
 package org.telegram.functions;
 
 import org.telegram.PunchBot;
-import org.telegram.telegrambots.api.methods.send.SendMessage;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import static org.telegram.Commands.*;
 
@@ -19,7 +19,7 @@ public class Help extends PunchBot {
 
         try {
             // Send the message
-            sendMessage(message);
+            execute(message);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

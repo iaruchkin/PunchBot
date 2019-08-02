@@ -1,8 +1,8 @@
 package org.telegram.functions;
 
 import org.telegram.PunchBot;
-import org.telegram.telegrambots.api.methods.send.SendMessage;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 /**
  * Created by igor on 27.09.17.
@@ -16,7 +16,7 @@ public class Lyrics extends PunchBot {
         //TODO по названию песни возвращать текст из бд
         try {
             // Send the message
-            sendMessage(message);
+            execute(message);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

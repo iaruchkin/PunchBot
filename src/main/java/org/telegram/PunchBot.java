@@ -1,8 +1,8 @@
 package org.telegram;
 
 import org.telegram.functions.*;
-import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static org.telegram.BotConfig.*;
 import static org.telegram.Commands.*;

@@ -2,8 +2,8 @@ package org.telegram;
 
 import org.telegram.functions.Generator;
 import org.telegram.telegrambots.ApiContextInitializer;
-import org.telegram.telegrambots.TelegramBotsApi;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class Main {
     public static void main(String[] args) {

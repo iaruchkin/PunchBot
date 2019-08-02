@@ -1,9 +1,9 @@
 package org.telegram.functions;
 
 import org.telegram.PunchBot;
-import org.telegram.telegrambots.api.methods.send.SendMessage;
-import org.telegram.telegrambots.api.objects.Update;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 /**
  * Created by igor on 27.09.17.
@@ -81,7 +81,7 @@ public class Generator extends PunchBot  {
 
             try {
                 // Send the message
-                sendMessage(message);
+                execute(message);
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
@@ -97,7 +97,7 @@ public class Generator extends PunchBot  {
             Thread.sleep(200);
 
             try {
-                sendMessage(message);
+                execute(message);
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
